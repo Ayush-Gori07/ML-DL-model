@@ -1,0 +1,13 @@
+{
+  "accuracy": 0.9219,
+  "good_precision": 0.7143,
+  "good_recall": 0.6977,
+  "features": [
+    "volatile acidity",
+    "citric acid",
+    "total sulfur dioxide",
+    "density",
+    "sulphates",
+    "alcohol"
+  ]
+}

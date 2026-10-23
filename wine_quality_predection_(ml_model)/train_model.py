@@ -45,6 +45,17 @@ print(f"Accuracy: {acc:.4f}")
 print(classification_report(y_test, y_pred))
 
 joblib.dump(model, "model.pkl")
+
+# Generate options.json for app consistency with other projects.
+options = {
+    "features": FEATURES,
+    "classes": ["Not good", "Good"],
+    "ranges": {f: [float(df[f].min()), float(df[f].max())] for f in FEATURES},
+    "means": {f: round(float(df[f].mean()), 4) for f in FEATURES},
+}
+with open("options.json", "w", encoding="utf-8") as f:
+    json.dump(options, f, indent=2)
+
 with open("metrics.json", "w") as f:
     json.dump(
         {
@@ -56,4 +67,4 @@ with open("metrics.json", "w") as f:
         f,
         indent=2,
     )
-print("Saved: model.pkl, metrics.json")
+print("Saved: model.pkl, options.json, metrics.json")
