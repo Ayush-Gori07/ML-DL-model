@@ -4,7 +4,3 @@ __pycache__/
 venv/
 .DS_Store
 *.py[cod]
-model.keras
-scaler.pkl
-options.json
-metrics.json

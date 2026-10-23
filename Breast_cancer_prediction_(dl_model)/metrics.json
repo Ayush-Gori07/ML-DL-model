@@ -1,0 +1,16 @@
+{
+  "best_model": "NeuralNetwork",
+  "results": [
+    {
+      "model": "LogisticRegression",
+      "accuracy": 0.9649,
+      "roc_auc": 0.996
+    },
+    {
+      "model": "NeuralNetwork",
+      "accuracy": 0.9825,
+      "roc_auc": 0.997
+    }
+  ],
+  "note": "Educational only; not for clinical diagnosis."
+}

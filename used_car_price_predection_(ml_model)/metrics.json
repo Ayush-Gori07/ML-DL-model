@@ -1,0 +1,35 @@
+{
+  "best_model": "RandomForest",
+  "results": [
+    {
+      "model": "RandomForest",
+      "R2_log": 0.8482,
+      "MAE": 109.06,
+      "MedAE": 66.79
+    },
+    {
+      "model": "Ridge",
+      "R2_log": 0.8636,
+      "MAE": 110.3,
+      "MedAE": 67.52
+    },
+    {
+      "model": "LinearRegression",
+      "R2_log": 0.8632,
+      "MAE": 110.7,
+      "MedAE": 68.07
+    },
+    {
+      "model": "Lasso",
+      "R2_log": 0.8203,
+      "MAE": 134.04,
+      "MedAE": 85.59
+    },
+    {
+      "model": "GradientBoosting",
+      "R2_log": 0.8013,
+      "MAE": 150.84,
+      "MedAE": 94.52
+    }
+  ]
+}

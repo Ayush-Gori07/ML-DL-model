@@ -1,0 +1,35 @@
+{
+  "best_model": "LinearRegression",
+  "results": [
+    {
+      "model": "LinearRegression",
+      "R2_log": 0.879,
+      "MAE": 100627.35,
+      "MedAE": 50454.61
+    },
+    {
+      "model": "Ridge",
+      "R2_log": 0.8766,
+      "MAE": 103033.61,
+      "MedAE": 50576.45
+    },
+    {
+      "model": "RandomForest",
+      "R2_log": 0.8534,
+      "MAE": 113619.43,
+      "MedAE": 56358.52
+    },
+    {
+      "model": "Lasso",
+      "R2_log": 0.8574,
+      "MAE": 113638.84,
+      "MedAE": 54878.08
+    },
+    {
+      "model": "GradientBoosting",
+      "R2_log": 0.8405,
+      "MAE": 121813.4,
+      "MedAE": 58447.94
+    }
+  ]
+}

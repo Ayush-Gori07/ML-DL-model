@@ -1,0 +1,14 @@
+{
+  "best_model": "NeuralNetwork",
+  "results": [
+    {
+      "model": "Perceptron",
+      "accuracy": 0.8667
+    },
+    {
+      "model": "NeuralNetwork",
+      "accuracy": 0.9333,
+      "loss": 0.2368
+    }
+  ]
+}

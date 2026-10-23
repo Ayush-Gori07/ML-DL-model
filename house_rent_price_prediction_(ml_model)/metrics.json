@@ -1,0 +1,41 @@
+{
+  "best_model": "SVR",
+  "results": [
+    {
+      "model": "SVR",
+      "R2_log": 0.7222,
+      "MAE": 3904.36,
+      "MedAE": 2480.48
+    },
+    {
+      "model": "GradientBoosting",
+      "R2_log": 0.7165,
+      "MAE": 3922.01,
+      "MedAE": 2494.82
+    },
+    {
+      "model": "Ridge",
+      "R2_log": 0.7109,
+      "MAE": 4041.47,
+      "MedAE": 2419.74
+    },
+    {
+      "model": "Lasso",
+      "R2_log": 0.7105,
+      "MAE": 4045.04,
+      "MedAE": 2385.56
+    },
+    {
+      "model": "LinearRegression",
+      "R2_log": 0.7106,
+      "MAE": 4055.59,
+      "MedAE": 2407.23
+    },
+    {
+      "model": "RandomForest",
+      "R2_log": 0.691,
+      "MAE": 4080.85,
+      "MedAE": 2659.9
+    }
+  ]
+}

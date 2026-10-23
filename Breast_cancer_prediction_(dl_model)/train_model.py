@@ -32,17 +32,13 @@ def load_dataset():
         if diagnosis_col is None:
             raise ValueError("CSV mein diagnosis/target/label column nahi mila.")
         labels = df.pop(diagnosis_col)
-        if labels.dtype == object:
-            normalized = labels.astype(str).str.strip().str.upper()
-            mapping = {"B": 0, "BENIGN": 0, "0": 0, "M": 1, "MALIGNANT": 1, "1": 1}
-            y = normalized.map(mapping)
-            if y.isna().any():
-                raise ValueError(f"Unknown diagnosis labels: {sorted(normalized[y.isna()].unique())}")
-        else:
-            unique = set(pd.Series(labels).dropna().unique().tolist())
-            if not unique.issubset({0, 1}):
-                raise ValueError("Numeric target column must contain only 0 and 1.")
-            y = labels.astype(int)
+        labels = labels.astype(str).str.strip().str.upper()
+        mapping = {"B": 0, "BENIGN": 0, "0": 0, "M": 1, "MALIGNANT": 1, "1": 1}
+        y = labels.map(mapping)
+        if y.isna().any():
+            unknown = sorted(labels[y.isna()].unique())
+            raise ValueError(f"Unknown diagnosis labels: {unknown}")
+        y = y.astype(int)
         X = df.apply(pd.to_numeric, errors="coerce")
         X = X.dropna(axis=1, how="all")
         valid = X.notna().all(axis=1) & y.notna()
@@ -54,7 +50,6 @@ def load_dataset():
 
     print("No data.csv found; using scikit-learn's bundled Wisconsin breast-cancer dataset.")
     dataset = load_breast_cancer()
-    # sklearn's original target is 0=malignant, 1=benign; invert to our convention.
     X = pd.DataFrame(dataset.data, columns=dataset.feature_names)
     y = pd.Series(1 - dataset.target, name="diagnosis")
     return X, y

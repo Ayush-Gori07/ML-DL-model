@@ -1,0 +1,37 @@
+{
+  "features": [
+    "SepalLengthCm",
+    "SepalWidthCm",
+    "PetalLengthCm",
+    "PetalWidthCm"
+  ],
+  "classes": [
+    "setosa",
+    "versicolor",
+    "virginica"
+  ],
+  "ranges": {
+    "SepalLengthCm": [
+      4.3,
+      7.9
+    ],
+    "SepalWidthCm": [
+      2.0,
+      4.4
+    ],
+    "PetalLengthCm": [
+      1.0,
+      6.9
+    ],
+    "PetalWidthCm": [
+      0.1,
+      2.5
+    ]
+  },
+  "means": {
+    "SepalLengthCm": 5.84,
+    "SepalWidthCm": 3.05,
+    "PetalLengthCm": 3.76,
+    "PetalWidthCm": 1.2
+  }
+}

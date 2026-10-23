@@ -1,0 +1,268 @@
+{
+  "brand_models": {
+    "Ambassador": [
+      "CLASSIC",
+      "Classic",
+      "Grand"
+    ],
+    "Audi": [
+      "A4",
+      "A6",
+      "A8",
+      "Q3",
+      "Q5",
+      "Q7",
+      "RS7"
+    ],
+    "BMW": [
+      "3",
+      "5",
+      "7",
+      "X1",
+      "X5"
+    ],
+    "Chevrolet": [
+      "Aveo",
+      "Beat",
+      "Captiva",
+      "Cruze",
+      "Enjoy",
+      "Optra",
+      "Sail",
+      "Spark",
+      "Tavera"
+    ],
+    "Daewoo": [
+      "Matiz"
+    ],
+    "Datsun": [
+      "GO",
+      "RediGO",
+      "redi-GO"
+    ],
+    "Fiat": [
+      "500",
+      "Avventura",
+      "Grande",
+      "Linea",
+      "Palio",
+      "Punto"
+    ],
+    "Force": [
+      "One"
+    ],
+    "Ford": [
+      "Aspire",
+      "Classic",
+      "EcoSport",
+      "Ecosport",
+      "Endeavour",
+      "Fiesta",
+      "Figo",
+      "Freestyle",
+      "Fusion",
+      "Ikon"
+    ],
+    "Honda": [
+      "Accord",
+      "Amaze",
+      "BR-V",
+      "BRV",
+      "Brio",
+      "CR-V",
+      "City",
+      "Civic",
+      "Jazz",
+      "Mobilio",
+      "WR-V"
+    ],
+    "Hyundai": [
+      "Accent",
+      "Creta",
+      "EON",
+      "Elantra",
+      "Elite",
+      "Getz",
+      "Grand",
+      "Santa",
+      "Santro",
+      "Sonata",
+      "Tucson",
+      "Venue",
+      "Verna",
+      "Xcent",
+      "i10",
+      "i20"
+    ],
+    "Isuzu": [
+      "D-Max"
+    ],
+    "Jaguar": [
+      "XF",
+      "XJ"
+    ],
+    "Jeep": [
+      "Compass"
+    ],
+    "Kia": [
+      "Seltos"
+    ],
+    "Land": [
+      "Rover"
+    ],
+    "MG": [
+      "Hector"
+    ],
+    "Mahindra": [
+      "Alturas",
+      "Bolero",
+      "Jeep",
+      "KUV",
+      "Marazzo",
+      "NuvoSport",
+      "Quanto",
+      "Renault",
+      "Scorpio",
+      "TUV",
+      "Thar",
+      "Verito",
+      "XUV300",
+      "XUV500",
+      "Xylo"
+    ],
+    "Maruti": [
+      "800",
+      "A-Star",
+      "Alto",
+      "Baleno",
+      "Celerio",
+      "Ciaz",
+      "Eeco",
+      "Ertiga",
+      "Esteem",
+      "Estilo",
+      "Gypsy",
+      "Ignis",
+      "Omni",
+      "Ritz",
+      "S-Cross",
+      "SX4",
+      "Swift",
+      "Vitara",
+      "Wagon",
+      "Zen"
+    ],
+    "Mercedes-Benz": [
+      "B",
+      "C-Class",
+      "E-Class",
+      "GL-Class",
+      "GLS",
+      "M-Class",
+      "New",
+      "S-Class"
+    ],
+    "Mitsubishi": [
+      "Pajero"
+    ],
+    "Nissan": [
+      "Evalia",
+      "Kicks",
+      "Micra",
+      "Sunny",
+      "Terrano",
+      "X-Trail"
+    ],
+    "OpelCorsa": [
+      "1.4",
+      "1.6Gls"
+    ],
+    "Renault": [
+      "Captur",
+      "Duster",
+      "Fluence",
+      "KWID",
+      "Koleos",
+      "Lodgy",
+      "Pulse",
+      "Scala",
+      "Triber"
+    ],
+    "Skoda": [
+      "Fabia",
+      "Laura",
+      "Octavia",
+      "Rapid",
+      "Superb",
+      "Yeti"
+    ],
+    "Tata": [
+      "Altroz",
+      "Aria",
+      "Bolt",
+      "Harrier",
+      "Hexa",
+      "Indica",
+      "Indigo",
+      "Manza",
+      "Nano",
+      "New",
+      "Nexon",
+      "Safari",
+      "Spacio",
+      "Sumo",
+      "Tiago",
+      "Tigor",
+      "Venture",
+      "Xenon",
+      "Zest"
+    ],
+    "Toyota": [
+      "Camry",
+      "Corolla",
+      "Etios",
+      "Fortuner",
+      "Innova",
+      "Yaris"
+    ],
+    "Volkswagen": [
+      "Ameo",
+      "CrossPolo",
+      "Jetta",
+      "Passat",
+      "Polo",
+      "Vento"
+    ],
+    "Volvo": [
+      "V40",
+      "XC",
+      "XC60"
+    ]
+  },
+  "fuel": [
+    "CNG",
+    "Diesel",
+    "Electric",
+    "LPG",
+    "Petrol"
+  ],
+  "seller_type": [
+    "Dealer",
+    "Individual",
+    "Trustmark Dealer"
+  ],
+  "transmission": [
+    "Automatic",
+    "Manual"
+  ],
+  "owner": [
+    "First Owner",
+    "Fourth & Above Owner",
+    "Second Owner",
+    "Test Drive Car",
+    "Third Owner"
+  ],
+  "min_year": 1992,
+  "max_year": 2020,
+  "max_km": 125000
+}
