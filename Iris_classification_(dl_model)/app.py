@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 
 import joblib
 import numpy as np
@@ -8,15 +9,23 @@ from tensorflow.keras.models import load_model
 
 st.set_page_config(page_title="Iris Flower Classifier", page_icon="🌸")
 
+BASE_DIR = Path(__file__).resolve().parent
+
 
 @st.cache_resource
 def load_artifacts():
-    return load_model("model.keras"), joblib.load("scaler.pkl")
+    try:
+        model = load_model(BASE_DIR / "model.keras")
+    except Exception as exc:
+        st.error(f"model.keras load nahi ho paaya: {exc}")
+        st.stop()
+    scaler = joblib.load(BASE_DIR / "scaler.pkl")
+    return model, scaler
 
 
 @st.cache_data
 def load_options():
-    with open("options.json") as f:
+    with open(BASE_DIR / "options.json") as f:
         return json.load(f)
 
 
