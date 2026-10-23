@@ -1,0 +1,22 @@
+# Consolidated requirements for all 6 ML/DL Streamlit projects
+# Install from workspace root: pip install -r requirements.txt
+#
+# Projects using tensorflow (deep learning):
+#   - Breast_cancer_prediction_(dl_model)
+#   - Iris_classification_(dl_model)
+#
+# Projects using only scikit-learn (no tensorflow):
+#   - car_dekho_cars_price_prediction_(ml_model)
+#   - house_rent_price_prediction_(ml_model)
+#   - used_car_price_predection_(ml_model)
+#   - wine_quality_predection_(ml_model)
+#
+# If you only want to run one project, install that project's own
+# requirements.txt instead — it avoids pulling tensorflow unnecessarily.
+
+streamlit
+pandas
+numpy
+scikit-learn>=1.3
+joblib
+tensorflow

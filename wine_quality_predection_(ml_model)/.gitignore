@@ -1,0 +1,7 @@
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+.DS_Store
+model.pkl
+options.json
+metrics.json
