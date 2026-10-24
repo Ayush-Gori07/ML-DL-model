@@ -1,13 +1,17 @@
 import json
+from pathlib import Path
+
 import joblib
 import pandas as pd
 import streamlit as st
 
 st.set_page_config(page_title="Wine Quality Predictor", page_icon="🍷")
 
+BASE_DIR = Path(__file__).resolve().parent
+
 @st.cache_resource
 def load_model():
-    return joblib.load("model.pkl")
+    return joblib.load(BASE_DIR / "model.pkl")
 
 model = load_model()
 

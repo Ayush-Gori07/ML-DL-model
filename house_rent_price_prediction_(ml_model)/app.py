@@ -1,4 +1,5 @@
 import json
+from pathlib import Path
 
 import joblib
 import numpy as np
@@ -8,16 +9,17 @@ import streamlit as st
 st.set_page_config(page_title="House Rent Predictor", page_icon="🏠")
 
 OTHER = "Other (list mein nahi hai)"
+BASE_DIR = Path(__file__).resolve().parent
 
 
 @st.cache_resource
 def load_model():
-    return joblib.load("model.pkl")
+    return joblib.load(BASE_DIR / "model.pkl")
 
 
 @st.cache_data
 def load_options():
-    with open("options.json") as f:
+    with open(BASE_DIR / "options.json") as f:
         return json.load(f)
 
 
