@@ -58,3 +58,16 @@ For a clean deploy, use **one project per repo** so each app gets its own slim `
 ## Important
 
 All models are educational demos. They are not validated for real-world decision-making — do not use them for medical diagnosis, financial decisions, or anything where an incorrect prediction has real consequences.
+
+## 🌐 Live Deployed Apps (Streamlit Cloud)
+
+| Project | Live App |
+|---------|----------|
+| Breast Cancer Classification (DL) | [Open App](https://ml-dl-model-wa4dcdaffwwdkxyshxlxnh.streamlit.app/) |
+| CarDekho Car Price Prediction | [Open App](https://ml-dl-model-gxtt5kjj4rts8hyjsy4vas.streamlit.app/) |
+| House Rent Prediction | [Open App](https://ml-dl-model-hux5wjjkurmkmld5wq4m5t.streamlit.app/) |
+| Iris Flower Classification (DL) | [Open App](https://ml-dl-model-nbpcgz2we24gmkkpqpmh6k.streamlit.app/) |
+| Used Car Price Prediction | [Open App](https://ml-dl-model-vtb72i7sah2kbhk2wbuzfd.streamlit.app/) |
+| Wine Quality Prediction | [Open App](https://ml-dl-model-hscmrzrc2raplwca2s83sv.streamlit.app/) |
+
+> **Note:** Yeh URLs Streamlit Cloud deploy ke baad actual hongi. Abhi yeh placeholder hain — har app deploy karne ke baad Streamlit Cloud se milne wale actual URL se replace kar dena.
