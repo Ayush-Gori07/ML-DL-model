@@ -1,35 +1,35 @@
 # 🚗 Used Car Price Prediction
 
 ## Problem
-Used car ki details (brand, model, fuel, transmission, owner, age, km driven) se uski **asking price** predict karna. Yeh regression problem hai.
+Predict the **asking price** of a used car from its details: brand, model, fuel type, transmission, owner, age, and kilometers driven. This is a regression problem.
 
 ## Dataset
-Used car dataset (Indian market, prices in ₹) — source link yahan daalo (Kaggle).
+Used car dataset (Indian market, prices in ₹) — add the source link here (Kaggle).
 File: `data/used_car_dataset.csv`
 
 ## Approach
-- Cleaning: `AskPrice` aur `kmDriven` se ₹ / km / commas hataye, hazaar mein convert kiya
-- Missing values aur duplicates hataye
-- IQR method se price aur km ke outliers hataye
-- Target ko `log1p` se transform kiya (price skewed hai)
-- Preprocessing: OneHotEncoder (categorical, rare categories group) + StandardScaler (numeric), sab ek `Pipeline` mein
-- Models compare kiye: Linear, Ridge, Lasso, Random Forest, Gradient Boosting
-- Best model (lowest MAE) `model.pkl` mein save hota hai
+- Cleaning: remove ₹, "km", and commas from `AskPrice` and `kmDriven`, convert to thousands
+- Remove missing values and duplicates
+- Remove price and km outliers using the IQR method
+- Transform the target using `log1p` (price is skewed)
+- Preprocessing: OneHotEncoder (categorical, rare categories grouped) + StandardScaler (numeric), all in a single `Pipeline`
+- Models compared: Linear Regression, Ridge, Lasso, Random Forest, Gradient Boosting
+- Best model (lowest MAE) saved in `model.pkl`
 
 ## Result
-Comparison table `train_model.py` run karne ke baad print hogi aur `metrics.json` mein save hogi. (Yahan apna best model aur MAE likh do.)
+The comparison table is printed after running `train_model.py` and saved in `metrics.json`. (Add your best model and MAE here.)
 
-## Run kaise karein
+## How to run
 ```bash
 pip install -r requirements.txt
-python train_model.py        # model.pkl, options.json, metrics.json banata hai
+python train_model.py        # creates model.pkl, options.json, metrics.json
 streamlit run app.py
 ```
 
 ## Files
-| File | Kaam |
+| File | Purpose |
 |---|---|
 | `used_car_price.ipynb` | EDA + model comparison |
 | `train_model.py` | Cleaning + training + best model save |
 | `app.py` | Streamlit app |
-| `data/used_car_dataset.csv` | Dataset (khud add karo) |
+| `data/used_car_dataset.csv` | Dataset (add it yourself) |

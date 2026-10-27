@@ -1,37 +1,37 @@
 # 🌸 Iris Flower Classification (Deep Learning)
 
 ## Problem
-Flower ki 4 measurements (sepal/petal length aur width) se uski **species** predict karna: Iris-setosa, Iris-versicolor ya Iris-virginica. Yeh multi-class classification problem hai.
+Predict the **species** of an iris flower from 4 measurements (sepal and petal length and width): Iris-setosa, Iris-versicolor, or Iris-virginica. This is a multi-class classification problem.
 
 ## Dataset
-Iris Dataset (150 rows, 3 classes, har class ki 50 rows) — [Kaggle](https://www.kaggle.com/datasets/uciml/iris)
+Iris Dataset (150 rows, 3 classes, 50 rows per class) — [Kaggle](https://www.kaggle.com/datasets/uciml/iris)
 File: `data/Iris.csv`
 
 ## Approach
-- `Id` column hataya, `Species` ko `LabelEncoder` se number banaya
+- Remove the `Id` column, encode `Species` to integers using `LabelEncoder`
 - 80/20 stratified train-test split
-- `StandardScaler` sirf train pe fit kiya, test pe sirf transform (data leakage se bachne ke liye)
+- Fit `StandardScaler` on training data only, transform test data only (to avoid data leakage)
 - Baseline: sklearn `Perceptron`
 - Deep learning model: Keras `Sequential` — Dense(16, relu) → Dense(8, relu) → Dense(3, softmax), `adam` optimizer, `categorical_crossentropy` loss, 100 epochs
-- Final model `model.keras` mein save hota hai, scaler `scaler.pkl` mein
+- Final model saved in `model.keras`, scaler in `scaler.pkl`
 
 ## Result
-Comparison `train_model.py` run karne ke baad print hogi aur `metrics.json` mein save hogi. (Yahan apna Perceptron vs Neural Network accuracy likh do.)
+The comparison is printed after running `train_model.py` and saved in `metrics.json`. (Add your Perceptron vs Neural Network accuracy here.)
 
 ## Limitations
-Dataset bahut chhota hai (150 rows), isliye test set sirf 30 rows ka hai — accuracy thodi upar-neeche ho sakti hai random split pe.
+The dataset is small (150 rows), so the test set is only 30 rows — accuracy may vary somewhat depending on the random split.
 
-## Run kaise karein
+## How to run
 ```bash
 pip install -r requirements.txt
-python train_model.py        # model.keras, scaler.pkl, options.json, metrics.json banata hai
+python train_model.py        # creates model.keras, scaler.pkl, options.json, metrics.json
 streamlit run app.py
 ```
 
 ## Files
-| File | Kaam |
+| File | Purpose |
 |---|---|
 | `deep_learning_model_1.ipynb` | EDA + Perceptron vs Neural Network |
 | `train_model.py` | Preprocessing + training + model save |
 | `app.py` | Streamlit app |
-| `data/Iris.csv` | Dataset (khud add karo) |
+| `data/Iris.csv` | Dataset (add it yourself) |
