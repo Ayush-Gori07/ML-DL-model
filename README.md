@@ -58,3 +58,14 @@ For a clean deploy, use **one project per repo** so each app gets its own slim `
 ## Important
 
 All models are educational demos. They are not validated for real-world decision-making — do not use them for medical diagnosis, financial decisions, or anything where an incorrect prediction has real consequences.
+
+## 🔗 Project Links
+
+| Project Link | Project Name |
+|:---|---:|
+| [Click Here](https://ml-dl-model-wa4dcdaffwwdkxyshxlxnh.streamlit.app/) | Breast Cancer Prediction (DL) |
+| [Click Here](https://ml-dl-model-gxtt5kjj4rts8hyjsy4vas.streamlit.app/) | Car Dekho Cars Price Prediction (ML) |
+| [Click Here](https://ml-dl-model-hux5wjjkurmkmld5wq4m5t.streamlit.app/) | House Rent Price Prediction (ML) |
+| [Click Here](https://ml-dl-model-nbpcgz2we24gmkkpqpmh6k.streamlit.app/) | Iris Classification (DL) |
+| [Click Here](https://ml-dl-model-vtb72i7sah2kbhk2wbuzfd.streamlit.app/) | Used Car Price Prediction (ML) |
+| [Click Here](https://ml-dl-model-hscmrzrc2raplwca2s83sv.streamlit.app/) | Wine Quality Prediction (ML) |
